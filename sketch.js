@@ -10,7 +10,7 @@ var bird;
 function preload() {
    
    backgroundImage = loadImage("background18.jpg");
-   getBackgroundImg();
+ //  getBackgroundImg();
 }
 
 function setup(){
@@ -162,20 +162,20 @@ function keyPressed(){
     
 }
 
-async function getBackgroundImg(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
-    var responseJSON = await response.json();
+//async function getBackgroundImg(){
+  //  var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    //var responseJSON = await response.json();
 
-    var datetime = responseJSON.datetime;
-    var hour = datetime.slice(13,11);
+  //  var datetime = responseJSON.datetime;
+  //  var hour = datetime.slice(13,11);
     
-    if(hour>06 && hour<18){
-        bg = "background11g.jpg";
-    }
-    else{
-        bg = "background18.jpg";
-    }
-
-    backgroundImg = loadImage(bg);
-    console.log(backgroundImg);
-}
+  //  if(hour>06 && hour<18){
+   //     bg = "background11g.jpg";
+  //  }
+  //  else{
+    //    bg = "background18.jpg";
+  //  }
+//
+  //  backgroundImg = loadImage(bg);
+  //  console.log(backgroundImg);
+// }
