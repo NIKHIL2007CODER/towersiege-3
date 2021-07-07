@@ -85,7 +85,7 @@ function setup(){
 
 function draw(){
     
-    background(backgroundImg);
+    background(backgroundImage);
 
     Engine.update(engine);
     strokeWeight(4);
