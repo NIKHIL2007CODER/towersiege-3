@@ -4,10 +4,12 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var engine, world;
-
+var backgroundImage;
 var backgroundImg,platform;
 var bird; 
 function preload() {
+   
+   backgroundImage = loadImage("background18.jpg");
    getBackgroundImg();
 }
 
@@ -82,7 +84,7 @@ function setup(){
 }
 
 function draw(){
-    if(backgroundImg)
+    if(backgroundImage);
     background(backgroundImg);
 
     Engine.update(engine);
